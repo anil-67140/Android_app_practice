@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/golden_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_View"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="French Learning App!"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/yellow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#CDDC39"
+        android:tag="countdown"
+        android:onClick="SayTheColor"
+        android:text="Yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_View" />
+
+    <Button
+        android:id="@+id/green_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#4CAF50"
+        android:tag="countdown"
+        android:onClick="SayTheColor"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="@id/yellow_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/yellow_btn"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_btn" />
+
+    <Button
+        android:id="@+id/red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#F44336"
+        android:tag="countdown"
+        android:onClick="SayTheColor"
+        android:text="Red"
+        app:layout_constraintEnd_toEndOf="@id/green_btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/green_btn"
+        app:layout_constraintTop_toBottomOf="@+id/green_btn" />
+
+    <Button
+        android:id="@+id/purple_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#9C27B0"
+        android:tag="countdown"
+        android:onClick="SayTheColor"
+        android:text="purple"
+        app:layout_constraintEnd_toEndOf="@id/red_btn"
+        app:layout_constraintStart_toStartOf="@id/red_btn"
+        app:layout_constraintTop_toBottomOf="@+id/red_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
